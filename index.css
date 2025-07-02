@@ -93,7 +93,10 @@ display: block !important;
 }
 
 
-
+.allustration{
+    display: flex;
+    margin: auto;
+}
 
 
 }
@@ -152,11 +155,56 @@ display: block !important;
     padding:  0px;
 }
 
-.fifth-rice{
-    width: 260px;
-    height: 260px;
+.fifth-img{
+    max-width: 260px;
+    max-height: 260px;
+}
+.sixth-left{
+    margin-left: 0 !important;
+     max-width: 482px;
+    max-height: 389px;
+}
+.sixth-right {
+
+    padding: 75px 40px 10px 0px !important;
+  
+}
+.undertext{
+    padding-top: 0 !important;
+}
+.seven-right img{
+    width: 100%;
+    height: auto;
+    max-width: 342px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+  .seven-right{
+    margin-left: 0px !important;
+  }
+
+
+}
+@media(max-width: 500px){
+    .dish{
+        max-width: 290px !important ;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
+    }
 }
 
+@media(max-width: 1300px){
+
+.sixth-left{
+    width: 50%;
+
+    margin-left: 20px !important;
+}
+.second-right{
+    margin-left: 10px !important;
+}
 }
 
 .toggleItems{
@@ -264,7 +312,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 50px;
-    gap: 100px;
+    gap: 70px;
 }
 
 .allustration {
@@ -273,9 +321,11 @@ body {
     height: auto;
     /* Maintain aspect ratio */
     /* Optional: limit height */
-    object-fit: cover;
+    max-width: 611px;
 }
-
+.second-right{
+    margin-left: 100px;
+}
 .happy {
     font-size: 48px;
     font-weight: 700;
@@ -523,6 +573,7 @@ body {
 
 .fifth-img {
     position: relative;
+    
 }
 
 .heart {
@@ -548,31 +599,42 @@ body {
 .sixth {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 50px;
+    margin-top: 70px;
     gap: 10px;
+   
 }
 
 .sixth-left {
-    background-image: url(./Rectangle\ 54.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 10px;
-
-
+   width: 100%;
+    margin: 20px;
+    margin-left: 100px;
+    position: relative;
+ 
 }
-
+.rectangle{
+    width: 100%;
+     height: auto;
+    max-width: 482px;
+    z-index: -1;
+}
 .dish {
-    width: 368px;
-    height: 304px;
-    display: flex;
-    margin: auto;
-    transform: translateX(-10%);
+    
+    max-width: 368px;
+    
+    height: auto;
+  z-index: 1;
+  position: absolute;
+  top: 7%;
+  left: 2%;
+   
+    
+  
 }
 
 .sixth-right {
 
-    padding: 95px 40px 10px 110px;
+    padding: 75px 40px 10px 80px;
+  
 }
 
 .sixth-right h1 {
@@ -585,16 +647,14 @@ body {
     color: #E5AF10;
 }
 
-.sixth p {
-    padding-top: 13px;
-}
+
 
 .sixth-right button {
-    margin-top: 37px;
+    margin-top: 20px;
 }
 
 .place {
-    padding-top: 40px;
+    padding-top: 20px;
     font-size: 40px;
     font-weight: 600;
 }
