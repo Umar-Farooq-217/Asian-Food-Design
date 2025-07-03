@@ -183,7 +183,9 @@ display: block !important;
   .seven-right{
     margin-left: 0px !important;
   }
-
+.happy{
+    padding-top: 30px !important;
+}
 
 }
 @media(max-width: 500px){
